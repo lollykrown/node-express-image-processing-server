@@ -25,6 +25,6 @@ router.post('/upload', upload.single('photo'), (req, res) => {
     if (!req.fileValidatorError){
         res.status(201).json({success: true})
     }
-})
+});
 
 module.exports = router;
